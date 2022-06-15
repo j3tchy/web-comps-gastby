@@ -1,0 +1,6 @@
+@import "../../global/reset.css";
+
+:host {
+  display: block;
+}
+

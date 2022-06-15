@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:host(.banner) {
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+:host(.blue) {
+  background-color: #1DA1F2;
+  color: #FFF;
+}

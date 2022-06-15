@@ -1,0 +1,17 @@
+{
+  "entries": [
+    "./components/jg-banner/jg-banner.js",
+    "./components/jg-button/jg-button.js",
+    "./components/jg-input-container/jg-input-container.js",
+    "./components/jg-menu/jg-menu.js",
+    "./components/jg-search-bar/jg-search-bar.js",
+    "./components/jg-textfield/jg-textfield.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.16.1",
+    "typescriptVersion": "4.5.4"
+  },
+  "collections": [],
+  "bundles": []
+}

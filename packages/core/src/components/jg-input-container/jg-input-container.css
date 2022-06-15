@@ -1,0 +1,34 @@
+@import "../../global/reset.css";
+
+jg-input-container {
+  display: flex;
+  border-radius: 6px;
+  border: 1px solid var(--border-color, #999);
+  align-items: center;
+  width: 320px;
+  position: relative;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+/*
+  On hover, set the CSS property and pass through the colour.
+  CSS properties have to cascade so the properties have to be set on an element at a higher level than the element it is affecting
+*/
+
+jg-input-container:hover {
+  --border-color: red;
+  --button-hover: blue;
+}
+
+.focus-indicator {
+  display: flex;
+  width: 100%;
+  margin: -3px;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.focus-indicator:focus-within {
+  box-shadow: 0 3px 3px red;
+}

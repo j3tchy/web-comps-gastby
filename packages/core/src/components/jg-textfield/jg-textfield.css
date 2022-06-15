@@ -1,0 +1,31 @@
+@import "../../global/reset.css";
+
+:host {
+  display: inline-block;
+  border: none;
+}
+
+:host input[type="text"] {
+  border: 0;
+  line-height: 1.5rem;
+  padding: 6px;
+  border-radius: 6px;
+  box-shadow: none;
+  width: 100%;
+}
+
+:host input[type="text"]:focus {
+  outline: none;
+}
+
+:host ::slotted(jg-button) ::slotted(svg) {
+  background-color: var(--button-hover);
+}
+
+/* :host(.ic-textfield):has(a) {
+  background-color: red;
+} */
+
+:host(.ic-textfield) ::slotted(div) {
+  background-color: red;
+}

@@ -1,0 +1,28 @@
+@import "../../global/reset.css";
+
+/*
+  As it's within the shadowDOM, styling has to be within the component CSS file
+  Use CSS custom properties to set the styling
+  @prop --button-hover
+*/
+
+:host {
+  display: inline-block;
+}
+
+.button {
+  border: none;
+  background: none;
+  display: inline-flex;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/*
+  This button is further down from jg-input-container and takes the colour styling when the css variable is set from jg-input-container:hover
+*/
+.button ::slotted(svg) {
+  color: var(--button-hover);
+}
